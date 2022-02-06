@@ -7,10 +7,7 @@ export default function Navbar() {
 	return (
 		<nav className={styles.navbar}>
 			<div className={styles.logo}>
-				<Image src="/images/pokeball.png" width="30" height="30" alt="PokeNext Logotipo" />
-				<Link href='/'>
-					<h1>PokeNext</h1>
-				</Link>
+				<Image src="/images/pokeball.png" width="30" height="30" alt="PokeNext Logotipo" /><h1>PokeNext</h1>
 			</div>
 			<ul className={styles.link_items}>
 				<li>
