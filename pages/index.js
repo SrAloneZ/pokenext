@@ -13,19 +13,15 @@ export async function getStaticProps()
 	const data = await res.json();
 
 	// add pokemon index
-	data.results.forEach((item, index) =>
-	{
-		item.id = index+1;
-	});
+	data.results.forEach((item, index) => {
+		item.id = index + 1;
+	  });
 
-	return (
-		{
-			props:
-			{
-				pokemons: data.results,
-			}
-		}
-	)
+	  return {
+		props: {
+		  pokemons: data.results,
+		},
+	  };
 }
 
 export default function Home(props) {
